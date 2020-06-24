@@ -9,10 +9,15 @@ dalam membuat animasi pada css ada banyak cara
 	font-size: 13px;
    }
 
+  transisi membuat effect element dari besar ke kecil
+
 2. animation
    .animasi{
    	animation: .2s infinite;
    }
    @keyframes animasi{
    	25%:(top: 25%);
-   } 
+   }
+   animasi membuat effect dari kecil ke besar
+
+   jadi animasi adalah kebalikan dari transisi namun masing masing memiliki kelebihan sendiri.
