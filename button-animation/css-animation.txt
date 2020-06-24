@@ -1,0 +1,18 @@
+dalam membuat animasi pada css ada banyak cara 
+1. transition
+   .animasi{ 
+	padding: 12px;
+   } 
+   .animasi:hover{
+	transition: .3s;
+	padding: 10px;
+	font-size: 13px;
+   }
+
+2. animation
+   .animasi{
+   	animation: .2s infinite;
+   }
+   @keyframes animasi{
+   	25%:(top: 25%);
+   } 
