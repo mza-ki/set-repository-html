@@ -1,0 +1,52 @@
+html,
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+.container{
+  border: 5px solid  #fa2c00;  
+  width: 600px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  padding: 5px;
+  display: grid;  
+  grid-template-areas: "header header"
+                       "aside main"
+                       "nav main"
+                       "footer footer";
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1.3fr;
+}
+header{
+  grid-area: header;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside{
+  grid-area: aside;
+  background-color: darkred;
+  padding: 60px 0;
+} 
+nav{
+  grid-area: nav;
+  background-color: #E45765;
+  padding: 100px 0;
+}
+main{
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E0AA77;
+}
+footer{
+  grid-area: footer;
+  background-color: #666;
+  padding: 20px 0;
+}
