@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: tomato;
+  width: 100vw;
+  
+}
+
+header{
+  width: 100%;
+  height: 40px;
+  background: #000;
+}
+
+.header{
+  background-color: black;
+  
+  display: flex;
+}
+
+.header a{
+  text-decoration: none;
+  color: white;
+  padding: 12px 24px;
+}
+
+.header a:hover{
+  background-color: white;
+  color: black;
+}
+
