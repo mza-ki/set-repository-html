@@ -13,31 +13,32 @@ body{
   width: 100%;
   height: 40px;
 }
-
-#home{
-  width: 100%;
-  height: 95vh;
-}
-
 .header a{
   text-decoration: none;
   color: white;
   padding: 12px 24px;
   font-size: 15px;
 }
-
 .header a:hover{
   background-color: white;
   color: black;
 }
 
+#home{
+  width: 100%;
+  height: 95vh;
+}
 .home img{
   width: 100%;
   height: 95vh;
   margin-top: 40px;
 }
+
+#band{
+  width: 100%;
+  height: 100vh;
+}
 .band{
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +52,7 @@ body{
   color: #5d6d7e;
 }
 .band #title{
-  width: 50%;
+  width: 60%;
   text-align: justify;
 }
 .band .name{
@@ -61,14 +62,77 @@ body{
   align-items: center;
 }
 .band .name p{
-  margin-right: 100px;
+  padding: 32px 0;
+  margin: 0 100px;
 }
 .band .img img{
-  width: 150px;
-  margin-right: 100px;
+  width: 150px; 
+  margin: 0 50px;
 }
 
-#band{
+#tour{
   width: 100%;
-  height: 100vh;
+  height: 110vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.font-white{
+  color: white;
+}
+.background-white{
+  background-color: white;
+}
+.card{
+  display: flex;
+  flex-direction: row;
+  width: 58%;
+  height: 58%;
+}
+.card .card-newyork{
+  width: 33.3%;
+}
+.card .card-paris{
+  width: 33.3%;
+  margin: 0 15px;
+}
+.card .card-sanfransisco{
+  width: 33.4%;
+}
+
+.card .card-newyork, .card .card-paris, .card .card-sanfransisco{
+  display:inline-block;
+  background: black;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.card .img-100{
+  width: 100%;
+  height: 52%;
+}
+
+.card .img-100:hover{
+  opacity: 0;
+  /* background:  #97a8bb; */
+}
+
+.card .title{
+  background: #fff;
+  box-sizing: border-box;
+  padding: 16px;
+  min-height: 48%;
+  margin-top: -4px;
+}
+.card .title button{
+  background-color: black;
+  color: white;
+  padding: 12px;
+  font-size: 1em;
+}
+.card .title button:hover{
+  background-color: #bfc9ca ;
+  color: black;
 }
