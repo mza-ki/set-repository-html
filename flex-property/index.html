@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Flex</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!--
+    flexbox adalah model layout 1 dimensi yang mengatur jarak 
+    dan penjajaran antar item dalam satu container/kelas/parent.
+
+    1 dimensi maksudnya hanya bisa kolom saja atau baris saja
+
+    letak elemen
+    main axis/elemen sejajar secara horizontal
+    cross axis/elemen sejajar secara vertical
+
+    ukuran
+    lebar container  = main size
+    tinggi container = cross size
+
+    awal dari elemen secara horizontal 
+    -> main start
+    -> main end
+
+    awal dari elemen secara vertikal 
+    -> cross start
+    -> cross end
+    
+    jika ingin mendapatkan hasil yang maksimal jangan lupa untuk menambahkan setiap item display flex apalagi dalam  class child dalam class parent atau bungkusan yang lain 
+  -->
+
+  <!-- flex -->
+  <h3>Penerapan display flex</h3>
+  <p>display: flex;</p>
+  <div class="size flex">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <!-- flex dirextion -->
+  <h3>Penerapan property flex-direction</h3>
+  <p>flex-direction adalah untuk Mengatur arah/urutan dalam items</p>
+  <ol>
+    <li>row</li>
+    <li>row-reverse</li>
+    <li>column</li>
+    <li>column-reverse</li>
+  </ol>
+
+  <p>flex-direction : row;</p>
+  <div class="size flex-direction-row">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>flex-direction : row-reverse;</p>
+  <div class="size flex-direction-row-reverse">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>flex-direction : column;</p>
+  <div class="size flex-direction-column">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>flex-direction : column-reverse;</p>
+  <div class="size flex-direction-column-reverse">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <!-- flex-wrap -->]
+  <h3>Penerapan property flex-wrap</h3>
+  <p>flex-wrap adalah secara default semua items didalam container akan berada pada satu baris meskipun ukurannya sudah
+    tidak cukup, wrap memungkinkan untuk memindahkan items ke baris bawahnya.</p>
+  <ol>
+    <li>nowrap</li>
+    <li>wrap</li>
+    <li>wrap-reverse</li>
+  </ol>
+
+  <p>flex-wrap : nowrap;</p>
+  <div class="size flex-wrap-nowrap">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+    <div class="enam">6</div>
+    <div class="tujuh">7</div>
+  </div>
+
+  <p>flex-wrap : wrap;</p>
+  <div class="size flex-wrap-wrap">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+    <div class="enam">6</div>
+    <div class="tujuh">7</div>
+  </div>
+
+  <p>flex-wrap : wrap-reverse;</p>
+  <div class="size flex-wrap-wrap-reverse">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+    <div class="enam">6</div>
+    <div class="tujuh">7</div>
+  </div>
+
+  <!-- jutify-content -->
+  <h3>Penerapan property justify-content</h3>
+  <p>justify-content adalah untuk Mengatur jarak antar items</p>
+  <ol>
+    <li>flex-start</li>
+    <li>flex-end</li>
+    <li>center</li>
+    <li>space-between</li>
+    <li>space-around</li>
+    <li>space-evenly</li>
+  </ol>
+
+  <p>justify-content : flex-start;</p>
+  <div class="size justify-content-flex-start">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>justify-content : flex-end;</p>
+  <div class="size justify-content-flex-end">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>justify-content : center;</p>
+  <div class="size justify-content-center">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>justify-content : space-between;</p>
+  <div class="size justify-content-space-between">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>justify-content : space-around;</p>
+  <div class="size justify-content-space-around">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>justify-content : space-evenly;</p>
+  <div class="size justify-content-space-evenly">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <!-- align-items -->
+  <h3>Penerapan property align-items</h3>
+  <p>align-items adalah mengatur perilaku penjajaran items terhadap cross axis</p>
+  <ol>
+    <li>flex-start</li>
+    <li>flex-end</li>
+    <li>center</li>
+    <li>stretch</li>
+    <li>baseline</li>
+  </ol>
+
+  <p>align-items : flex-start;</p>
+  <div class="size1 align-items-flex-start">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>align-items : flex-end;</p>
+  <div class="size1 align-items-flex-end">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>align-items : center;</p>
+  <div class="size1 align-items-center">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>align-items : stretch;</p>
+  <div class="size1 align-items-stretch">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>align-items : baseline;</p>
+  <div class="size1 align-items-baseline">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <!-- align-content -->
+  <h3>Penerapan property align-content</h3>
+  <p>align-content adalah mengatur jarak antar items terhadap cross axis(hanya berfungsi ketika items lebih dari 1
+    baris)</p>
+  <ol>
+    <li>flex-start</li>
+    <li>flex-end</li>
+    <li>center</li>
+    <li>space-between</li>
+    <li>space-around</li>
+  </ol>
+
+  <p>align-content : flex-start;</p>
+  <div class="size1 align-content-flex-start">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+    <div class="enam">6</div>
+    <div class="tujuh">7</div>
+  </div>
+
+  <p>align-content : flex-end;</p>
+  <div class="size1 align-content-flex-end">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+    <div class="enam">6</div>
+    <div class="tujuh">7</div>
+  </div>
+
+  <p>align-content : center;</p>
+  <div class="size1 align-content-center">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+    <div class="enam">6</div>
+    <div class="tujuh">7</div>
+  </div>
+
+  <p>align-content : space-between;</p>
+  <div class="size1 align-content-space-between">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+    <div class="enam">6</div>
+    <div class="tujuh">7</div>
+  </div>
+
+  <p>align-content : space-around;</p>
+  <div class="size1 align-content-space-around">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+    <div class="enam">6</div>
+    <div class="tujuh">7</div>
+  </div>
+
+  <!-- order -->
+  <h3>Penerapan property order</h3>
+  <p>order adalah untuk Mengatur urutan items yang kita inginkan.</p>
+  <p>order : value;</p>
+  <p>sebelum dikasih order</p>
+  <div class="center-text size justify-content-space-between">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>setelah dikasih order</p>
+  <p>.satu { order: 2; }</p>
+  <p>.dua { order: 1; }</p>
+  <p>.tiga { order: 4; }</p>
+  <p>.empat{ order: 3; }</p>
+
+  <div id="order-text" class="center-text size justify-content-space-between">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <!-- flex-grow/flex -->
+  <h3>Penerapan property flex-grow/flex</h3>
+  <p>flex-grow/flex adalah untuk Mengatur besar items yang kita inginkan.</p>
+  <p>flex-grow/flex : value;</p>
+  <p>sebelum dikasih flex-grow/flex</p>
+
+  <div class="center-text size justify-content-space-between">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>setelah dikasih flex</p>
+  <p>.satu { flex: 1; }</p>
+  <p>.dua { flex: 1; }</p>
+  <p>.tiga { flex: 3; }</p>
+  <p>.empat{ flex: 1; }</p>
+
+  <div id="flex-text" class="center-text size flex">
+    <div class="m-10 satu">1</div>
+    <div class="m-10 dua">2</div>
+    <div class="m-10 tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <p>setelah dikasih flex-grow</p>
+  <p>.satu { flex-grow: 1; }</p>
+  <p>.dua { flex-grow: 1; }</p>
+  <p>.tiga { flex-grow: 3; }</p>
+  <p>.empat{ flex-grow: 1; }</p>
+
+  <div id="flex-grow-text" class="center-text size flex">
+    <div class="m-10 satu">1</div>
+    <div class="m-10 dua">2</div>
+    <div class="m-10 tiga">3</div>
+    <div class="empat">4</div>
+  </div>
+
+  <!-- align-self -->
+  <h3>Penerapan property align-self</h3>
+  <p>align-self adalah mengatur perilaku penjajaran items yang spesifik terhadap cross axis</p>
+  <ol>
+    <li>flex-start</li>
+    <li>flex-end</li>
+    <li>center</li>
+    <li>stretch</li>
+    <li>baseline</li>
+    <li>auto</li>
+  </ol>
+
+  <p>align-self : flex-start;</p>
+  <div class="size1 align-self align-self-flex-start">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+  </div>
+  <p>align-self : flex-end;</p>
+  <div class="size1 align-self align-self-flex-end">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+  </div>
+  <p>align-self : center;</p>
+  <div class="size1 align-self align-self-center">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+  </div>
+  <p>align-self : stretch;</p>
+  <div class="size1 align-self align-self-stretch">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+  </div>
+  <p>align-self : baseline;</p>
+  <div class="size1 align-self align-self-baseline">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+  </div>
+  <p>align-self : auto;</p>
+  <div class="size1 align-self align-self-auto">
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <div class="empat">4</div>
+    <div class="lima">5</div>
+    <div class="enam">6</div>
+  </div>
+
+</body>
+
+</html>
