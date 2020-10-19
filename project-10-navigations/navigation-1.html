@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Navigation smooth underlined</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            height: 80px;
+            width: 100%;
+            background-color: #88D4CA;
+        }
+        
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 25%;
+            height: 100%;
+            padding-right: 16px;
+        }
+        
+        li {
+            position: relative;
+        }
+        
+        a {
+            text-decoration: none;
+            letter-spacing: 1px;
+            color: #59709C;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30%;
+            height: 2px;
+            background-color: #59709C;
+            transition: all 1s ease;
+        }
+        
+        a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Help</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
