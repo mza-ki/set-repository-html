@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark and Light Switch</title>
+  <style>
+    :root {
+      --bg-color: #f7f7f7;
+      --main-text: #262626;
+      --secondary-text: #666;
+      --acent-color: #4605ff;
+    }
+
+    [data-theme='dark'] {
+      --bg-color: #111;
+      --main-text: #fff;
+      --secondary-text: #f7f7f7;
+    }
+
+    body {
+      background-color: var(--bg-color);
+    }
+
+    h1 {
+      color: var(--main-text);
+      font-weight: 800;
+    }
+
+    p {
+      color: var(--secondary-text);
+    }
+
+    button {
+      background-color: var(--acent-color);
+      border-radius: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="toggle-switch-container">
+    <label class="toggle-switch">
+      <input type="checkbox" id="toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <h1>About Zaki</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum amet iure voluptates ea ad, ipsam, voluptatum
+    voluptatibus officia quaerat recusandae. Ea autem amet assumenda aperiam ipsum eligendi dignissimos perspiciatis?
+  </p>
+  <button>See More</button>
+</body>
+
+</html>
+<script>
+  const toggle = document.getElementById('toggle');
+
+  const changeTheme = () => {
+    if (document.body.getAttribute('data-theme') === 'dark') {
+      document.body.removeAttribute('data-theme');
+    } else {
+      document.body.setAttribute('data-theme', 'dark')
+    }
+  }
+
+  toggle.addEventListener('change', changeTheme);
+</script>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Upload with loader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <system.web>
+    ...
+    <webServices>
+      <protocols>
+        <add name="HttpSoap" />
+        <add name="HttpPost" /> -->
+        <add name="HttpGet" />
+        <add name="Documentation" />
+        <add name="HttpPostLocalhost" />
+      </protocols>
+    </webServices>
+    ...
+  </system.web>
+  <!-- Image Preview -->
+  <img class="image">
+
+  <!-- Form -->
+  <form class="form">
+    <div>
+      <label for="ImageUploadInput" class="button choose-image-button">
+        Choose Image
+        <input type="file" id="ImageUploadInput">
+      </label>
+      <button type="submit" class="button upload-button">
+        Upload
+      </button>
+    </div>
+    <p class="image-name">Image name</p>
+  </form>
+
+  <!-- Loading bar -->
+  <div class="loading-wrapper">
+    <div class="loading-bar-bg"></div>
+    <div class="loading-bar"></div>
+    <p class="loading-number">20%</p>
+  </div>
+
+  <!-- Axios adn Custom JS -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

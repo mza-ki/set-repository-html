@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body{
+  height: 200vh;
+  background: linear-gradient(#121212 50%, #ffffff 50%);
+}
+
+#scroll-to-top, #scroll-to-top[data-show="true"]{
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 44px rgba(173, 181, 206, .75);
+  background: #fff;
+  transition-property: background, color, bottom, opacity,
+                      visibility;
+  transition-duration: .25s;
+}
+
+#scroll-to-top[data-show="false"]{
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#scroll-to-top svg{
+  color: #121212;
+  height: 24px;
+  width: 24px;
+}
+
+#scroll-to-top:hover{
+  cursor: pointer;
+  background: #121212;
+}
+
+#scroll-to-top:hover svg{
+  color: #fff;
+}

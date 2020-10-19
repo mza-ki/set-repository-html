@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Navbar Animation</title>
+  <link rel='stylesheet' type='text/css' href='style.css'>
+  <link rel='stylesheet' href='../fontawesome-free-5.13.1-web/css/all.css'>
+  <link rel='icon' href='#'>
+</head>
+
+<body>
+  <!-- fas fa-chevron-up -->
+  <nav>
+    <div id="logo">
+      <h4>The Logo</h4>
+    </div>
+    <ul class="nav-link">
+      <li> <a href="#">Home <i class="fas fa-chevron-down"></i></a> </li>
+      <li> <a href="#">Info <i class="fas fa-chevron-down"></i></a> </li>
+      <ul class="child-menu">
+        <li><a href="#">Member</a></li>
+        <li><a href="#">Non-Member</a></li>
+      </ul>
+      <li> <a href="#">Contact <i class="fas fa-chevron-down"></i></a> </li>
+      <li> <a href="#">About <i class="fas fa-chevron-down"></i></a> </li>
+    </ul>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+</body>
+
+</html>
+<script>
+  const navSlide = () => {
+    const burger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-link');
+    const navLinks = document.querySelectorAll('.nav-link li')
+
+    // toggle nav
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+
+      // Animate Links
+      navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+          link.style.animation = '';
+        }
+        else {
+          link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0}s`;
+        }
+      });
+      // burger animation
+      burger.classList.toggle('toggle');
+    });
+  }
+
+  navSlide();
+
+
+</script>

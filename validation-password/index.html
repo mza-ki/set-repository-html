@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation Password</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script>
+    let show_hide = document.querySelector('#show_hide');
+    function showHide() {
+      if (show_hide.className == "fas fa-eye") {
+        show_hide.className = "fas fa-eye-slash";
+        password.type = "text";
+      }
+      else {
+        show_hide.className = "fas fa-eye";
+        password.type = "password";
+      }
+    }
+
+    const password = document.querySelector('.password');
+
+    function valid(item, v_icon, inv_icon) {
+      let text = document.querySelector(`#${item}`);
+      text.style.opacity = "1";
+      let valid_icon = document.querySelector(`#${item} .${v_icon}`);
+      valid_icon.style.opacity = '1';
+      let invalid_icon = document.querySelector(`#${item} .${inv_icon}`);
+      invalid_icon.style.opacity = '0';
+    }
+
+    function invalid(item, v_icon, inv_icon) {
+      let text = document.querySelector(`#${item}`);
+      text.style.opacity = ".5";
+      let valid_icon = document.querySelector(`#${item} .${v_icon}`);
+      valid_icon.style.opacity = '0';
+      let invalid_icon = document.querySelector(`#${item} .${inv_icon}`);
+      invalid_icon.style.opacity = '1';
+    }
+
+    function textChange() {
+      if (password.value.match(/[A-Z]/) != null)
+        valid('capital', 'fa-check', 'fa-times');
+      else
+        invalid('capital', 'fa-check', 'fa-times');
+      if (password.value.match(/[0-9]/) != null)
+        valid('num', 'fa-check', 'fa-times');
+      else
+        invalid('num', 'fa-check', 'fa-times');
+      if (password.value.match(/[!@#$%^&*]/) != null)
+        valid('char', 'fa-check', 'fa-times');
+      else
+        invalid('char', 'fa-check', 'fa-times');
+      if (password.value.length > 7)
+        valid('more8', 'fa-check', 'fa-times');
+      else
+        invalid('more8', 'fa-check', 'fa-times');
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <input type="password" class="password" placeholder="Enter your password" oninput="textChange()" required>
+
+    <i class="fas fa-eye" id="show_hide" onclick="showHide()"></i>
+
+    <p id="capital">
+      <i class="fas fa-times"></i>
+      <i class="fas fa-check"></i>
+      <span>Capital letters</span>
+    </p>
+
+    <p id="char">
+      <i class="fas fa-times"></i>
+      <i class="fas fa-check"></i>
+      <span>Special characters</span>
+    </p>
+
+    <p id="num">
+      <i class="fas fa-times"></i>
+      <i class="fas fa-check"></i>
+      <span>Using numbers</span>
+    </p>
+
+    <p id="more8">
+      <i class="fas fa-times"></i>
+      <i class="fas fa-check"></i>
+      <span>8+ Characters</span>
+    </p>
+
+  </div>
+</body>
+
+</html>

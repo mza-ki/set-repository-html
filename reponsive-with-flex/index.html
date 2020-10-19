@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive With Display Flex</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .flex-container {
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(160, 87, 87);
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      list-style: none;
+    }
+
+    .flex-item {
+      background: coral;
+      padding: 5px;
+      width: 200px;
+      height: 150px;
+      line-height: 150px;
+      color: white;
+      font-weight: bold;
+      font-size: 3rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="flex-container">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+    <li class="flex-item">6</li>
+  </ul>
+</body>
+
+</html>
