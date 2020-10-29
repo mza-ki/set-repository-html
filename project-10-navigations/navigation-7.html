@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Navigation hover on icon</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            background-color: rgba(89, 112, 4, 0.741);
+            padding: 0 48px;
+            box-sizing: border-box;
+        }
+        
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        header .child-logo {
+            margin-right: 16px;
+        }
+        
+        header .child-logo div {
+            display: flex;
+            flex-direction: column;
+            padding: 4px 12px;
+            background-image: linear-gradient(to right, #fa0, #1af);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+        }
+        
+        header .logo p {
+            font-size: x-large;
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        nav {
+            display: flex;
+        }
+        
+        nav a {
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            color: rgba(1, 4, 10, 0.638);
+            margin-right: 32px;
+        }
+        
+        nav a i {
+            margin-right: 18px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 50%;
+            padding: 8px;
+        }
+        
+        nav a:hover {
+            color: #fff;
+        }
+        
+        nav a:hover i {
+            color: rgba(1, 4, 10, 0.638);
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="child-logo">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p>DIAMOND</p>
+        </div>
+        <nav>
+            <a href=""><i class="fas fa-home"></i> HOME</a>
+            <a href=""><i class="fas fa-book"></i> PORTFOLIO</a>
+            <a href=""><i class="fas fa-pencil-alt"></i> BLOG</a>
+            <a href=""><i class="fab fa-telegram-plane"></i> CONTACT</a>
+        </nav>
+    </header>
+</body>
+
+</html>
