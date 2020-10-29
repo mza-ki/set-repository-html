@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf=-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit">
+    <title>Navigation with profile account</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #59709C;
+        }
+        
+        header {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            box-sizing: border-box;
+            padding: 0 48px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: 700;
+            font-size: large;
+            transition: all .2s;
+        }
+        
+        nav a i {
+            margin-right: 8px;
+        }
+        
+        nav a:hover,
+        header .account .fa-wrench:hover,
+        header .account .fa-envelope:hover {
+            color: #59709C;
+        }
+        
+        header .account {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        header .avatar i {
+            font-size: 36px;
+            margin-right: 16px;
+        }
+        
+        header .account p {
+            color: #59709C;
+            margin-right: 8px;
+        }
+        
+        header .account .fa-wrench,
+        header .account .fa-envelope {
+            margin-right: 8px;
+            font-size: large;
+            transition: all .2s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""><i class="fas fa-home"></i>HOME</a>
+            <a href=""><i class="fas fa-book"></i>PORTFOLIO</a>
+            <a href=""><i class="fas fa-pencil-alt"></i>BLOG</a>
+            <a href=""><i class="fab fa-telegram-plane"></i>CONTACT</a>
+        </nav>
+        <div class="account">
+            <div class="avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <p>Muhammad Zaki</p>
+            <i class="fas fa-wrench"></i>
+            <i class="fas fa-envelope"></i>
+        </div>
+    </header>
+</body>
+
+</html>
