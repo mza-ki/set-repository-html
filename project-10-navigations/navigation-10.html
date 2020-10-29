@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Navigation for Online Shop</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        header {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            height: 80px;
+            box-sizing: border-box;
+            padding: 0 32px;
+            background-color: #3D3D49;
+        }
+        
+        header .main {
+            margin-top: 8px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+        }
+        
+        header .main .logo p {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        header .main nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        header .main nav a {
+            font-weight: 400;
+            border-bottom: 3px solid transparent;
+            transition: .2s;
+        }
+        
+        header .main nav a:hover {
+            border-bottom: 3px solid #f00;
+        }
+        
+        header .main nav a,
+        header .main div a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        header .main .my-cart {
+            background-color: rgba(255, 0, 0, 0.6);
+            padding: 8px;
+        }
+        
+        header .main .my-cart a i {
+            margin-right: 8px;
+        }
+        
+        header .secondary {
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        header .secondary div a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        header .secondary div a:hover {
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        header .weather i {
+            color: #f00;
+            margin-right: 8px;
+        }
+        
+        header .user-access a:first-child {
+            position: relative;
+            padding: 8px;
+        }
+        
+        header .user-access a:first-child::after {
+            position: absolute;
+            content: "";
+            top: 10px;
+            right: 0;
+            width: 1px;
+            height: 12px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <p>ZAKI'S SHOPE</p>
+            </div>
+            <nav>
+                <a href="">OFFERS</a>
+                <a href="">FOR HER</a>
+                <a href="">FOR HIM</a>
+                <a href="">FOR KIDS</a>
+                <a href="">NEW PRODUCTS</a>
+                <a href="">ABOUT</a>
+                <a href="">CONTACT</a>
+            </nav>
+            <div class="my-cart">
+                <a href=""><i class="fas fa-shopping-cart"></i>Mycart(2)</a>
+            </div>
+        </div>
+        <div class="secondary">
+            <div class="weather">
+                <a href=""><i class="fas fa-map-marker-alt"></i>24<sup>o</sup>C Medan, Indonesia</a>
+            </div>
+            <div class="user-access">
+                <a href="">Sign in</a>
+                <a href="">Sign up</a>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
