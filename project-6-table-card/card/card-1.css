@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, #19d3d1 5%, #57abf2);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 498px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.card-background-image {
+    position: relative;
+}
+
+.card-background-image img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.button-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -30px;
+    right: 24px;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    background-color: #57abf2;
+    border-radius: 50%;
+}
+
+.button-play a {
+    color: #fff;
+}
+
+.content-card {
+    width: 90%;
+    margin-top: 30px;
+}
+
+.title-card {
+    font-weight: 300;
+}
+
+.title-card h2 {
+    opacity: 0.7;
+    font-weight: 100;
+}
+
+.title-card h3 {
+    opacity: 0.6;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.icon-card {
+    margin-top: 8px;
+}
+
+.icon-card ul {
+    list-style: none;
+    display: flex;
+}
+
+.icon-card ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-card i {
+    color: #57abf2;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.icon-card p {
+    margin-right: 16px;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.description-card {
+    margin-top: 16px;
+    margin-bottom: 28px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.description-card p:first-child {
+    margin-bottom: 24px;
+}
