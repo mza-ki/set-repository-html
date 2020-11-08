@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Vertical and Horizontal Highlight</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, rgb(126, 126, 126), rgb(117, 117, 179));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        table {
+            border-radius: 1em;
+            overflow: hidden;
+            box-shadow: 0 0 20px #3f2e2e4a;
+            border-collapse: collapse;
+            color: #fff;
+            width: 60%;
+        }
+        
+        th,
+        td {
+            text-align: center;
+            padding: 15px;
+        }
+        
+        thead th {
+            background-color: rgb(158, 154, 154);
+        }
+        
+        tbody {
+            overflow: auto;
+        }
+        
+        tbody tr:hover {
+            background-color: rgba(58, 58, 58, 0.227);
+            cursor: pointer;
+        }
+        
+        tbody td {
+            position: relative;
+        }
+        
+        tbody td:hover::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -9999px;
+            bottom: -9999px;
+            background-color: #3f2e2e4a;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>School</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Muhammad Zaki</td>
+                <td>Man</td>
+                <td>SMK Telkom Medan</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Muhammad Zaki</td>
+                <td>Man</td>
+                <td>SMK Telkom Medan</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Muhammad Zaki</td>
+                <td>Man</td>
+                <td>SMK Telkom Medan</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Muhammad Zaki</td>
+                <td>Man</td>
+                <td>SMK Telkom Medan</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
