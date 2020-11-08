@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Table with vertical and horizontal highlight</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #664c7464;
+        }
+        
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        table {
+            background-image: linear-gradient(to right, #5306fd, #a72fe5);
+            box-shadow: 0 0 20px rgba(228, 4, 248, 0.2);
+            border-radius: 1em;
+            overflow: hidden;
+            border-collapse: collapse;
+            width: 1000px;
+            height: 80vh;
+            color: #fff;
+        }
+        
+        th,
+        td {
+            padding: 15px;
+        }
+        
+        table thead {
+            font-weight: 600;
+            background-image: linear-gradient(to right, #8454ff, #c171ee);
+        }
+        
+        tbody tr:hover {
+            background-color: #c8a2dd2e;
+            cursor: pointer;
+        }
+        
+        table tbody tr td:first-child {
+            padding-left: 32px;
+        }
+        
+        tbody td {
+            position: relative;
+        }
+        
+        tbody td:hover:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -999px;
+            bottom: -999px;
+            background-color: #c8a2dd2e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Sunday</td>
+                    <td>Monday</td>
+                    <td>Tuesday</td>
+                    <td>Wednesday</td>
+                    <td>Thursday</td>
+                    <td>Friday</td>
+                    <td>Saturday</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>lawrence Scoot</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Jane Medina</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Billy Michael</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Beverly Reid</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Tiffany Wade</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Sean Adams</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Rachel Simpson</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Mark Salazar</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
